@@ -141,10 +141,10 @@ Discuss potential reasons for incorrect predictions (e.g., similar digit shapes,
 └─────────┬──────────┘
           ↓
 ┌──────────────────────────────────────┐
-│ Model Training (Parallel)             │
+│ Model Training (Parallel)            │
 │ ┌────────┐ ┌────────┐ ┌────────────┐ │
-│ │  KNN   │ │  SVM   │ │ Decision    │ │
-│ │        │ │        │ │ Tree        │ │
+│ │  KNN   │ │  SVM   │ │ Decision   │ │
+│ │        │ │        │ │ Tree       │ │
 │ └────────┘ └────────┘ └────────────┘ │
 └─────────┬────────────────────────────┘
           ↓
