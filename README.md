@@ -115,57 +115,6 @@ Visualize 5–10 misclassified digit images
 
 Discuss potential reasons for incorrect predictions (e.g., similar digit shapes, noise, pixel ambiguity)
 
-# Flowchart
-
-┌────────────────────┐
-│   MNIST CSV Data   │
-└─────────┬──────────┘
-          ↓
-┌────────────────────┐
-│ Data Loading (CSV) │
-│ Pandas / NumPy     │
-└─────────┬──────────┘
-          ↓
-┌────────────────────┐
-│ Data Exploration   │
-│ • Class balance    │
-│ • Sample images    │
-│ • Missing values   │
-└─────────┬──────────┘
-          ↓
-┌────────────────────┐
-│ Preprocessing      │
-│ • Normalize [0,1]  │
-│ • Train/Test split │
-│ • (Optional) PCA   │
-└─────────┬──────────┘
-          ↓
-┌──────────────────────────────────────┐
-│ Model Training (Parallel)            │
-│ ┌────────┐ ┌────────┐ ┌────────────┐ │
-│ │  KNN   │ │  SVM   │ │ Decision   │ │
-│ │        │ │        │ │ Tree       │ │
-│ └────────┘ └────────┘ └────────────┘ │
-└─────────┬────────────────────────────┘
-          ↓
-┌────────────────────┐
-│ Model Evaluation   │
-│ • Accuracy         │
-│ • Confusion Matrix │
-└─────────┬──────────┘
-          ↓
-┌────────────────────┐
-│ Error Analysis     │
-│ • Misclassified    │
-│   digits           │
-│ • Visual inspection│
-└─────────┬──────────┘
-          ↓
-┌────────────────────┐
-│ Model Comparison   │
-│ & Insights         │
-└────────────────────┘
-
 
 # Technologies Used
 
